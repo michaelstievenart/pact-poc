@@ -108,7 +108,7 @@
               "**/node_modules/**"
             ]
           }
-        },
+        }
       }
     }},
   "defaultProject": "pact-ui"

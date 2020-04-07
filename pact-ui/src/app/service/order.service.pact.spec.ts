@@ -14,7 +14,7 @@ describe('Order Service Pact Test', () => {
     dir: pactOutputDirectory,
     logLevel: 'debug',
     port: 1234,
-    spec: 1,
+    spec: 3,
     consumer: 'PactPocApplication',
     provider: 'orderService'
   });
