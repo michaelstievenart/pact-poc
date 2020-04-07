@@ -1,18 +1,14 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "noUnusedLocals": false,
     "outDir": "./out-tsc/spec",
     "types": [
       "jasmine",
       "node"
-    ]
-  },
-  "files": [
-    "src/test.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ]
+    ],
+    /* JEST PACT CONFIGURATION */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  }
 }
