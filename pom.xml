@@ -45,6 +45,20 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
 
+        <!-- PACT DEPENDENCIES -->
+        <dependency>
+            <groupId>au.com.dius</groupId>
+            <artifactId>pact-jvm-provider-junit5</artifactId>
+            <version>4.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>au.com.dius</groupId>
+            <artifactId>pact-jvm-provider-maven</artifactId>
+            <version>4.0.3</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- TEST DEPENDENCIES -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
