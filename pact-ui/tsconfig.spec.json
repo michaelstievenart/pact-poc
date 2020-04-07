@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noUnusedLocals": false,
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    /* JEST PACT CONFIGURATION */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  }
+}
