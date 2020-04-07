@@ -1,0 +1,39 @@
+{
+  "consumer": {
+    "name": "PactPocApplication"
+  },
+  "provider": {
+    "name": "orderService"
+  },
+  "interactions": [
+    {
+      "description": "a request to GET an order by id",
+      "providerState": "order 1 exists",
+      "request": {
+        "method": "GET",
+        "path": "/api/orders/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "id": 1,
+          "name": "order 1",
+          "description": "order 1 description",
+          "date": "2019-01-01"
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}
